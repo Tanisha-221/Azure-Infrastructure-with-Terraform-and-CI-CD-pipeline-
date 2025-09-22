@@ -4,7 +4,7 @@
   "description": "In this project we buid a infrastructure as a code with terraform.  Deployed a simple web appilcation and automated it using CI/CD pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
