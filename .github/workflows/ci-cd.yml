@@ -55,7 +55,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'T-web-app(T-web-slot)'
+          app-name: 'T-web-app'
           slot-name: 'T-web-slot'
           package: .
           publish-profile: ${{ secrets.__publishingprofilesecretname__ }}
