@@ -39,8 +39,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Set up Azure CLI
-        uses: azure/setup-azurecli@v1
 
       - name: Login to Azure
         uses: azure/login@v1
