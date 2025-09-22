@@ -40,6 +40,17 @@ jobs:
     needs: build
     
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Azure CLI
+        uses: azure/setup-azurecli@v1
+
+      - name: Login to Azure (Dev)
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS_DEV }}
+          
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
