@@ -42,10 +42,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Set up Azure CLI
-        uses: azure/azure-cli-action@v1
-
+        
       - name: Login to Azure (Dev)
         uses: azure/login@v1
         with:
